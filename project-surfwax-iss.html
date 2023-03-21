@@ -103,10 +103,17 @@
                 <p class="mb-4"><span class="text-muted">Back-End</span></p>
 
                 <div class="mb-5">
-                  <p>Surf Wax ISS is a containerized REST API. 
-                    There are 13 routes available to query ISS Trajectory Data from NASA, and return interesting information such as epoch information, speed, and location tracking. 
+                  <p>NASA collects positional and velocity data for the ISS, and made it publicly available through their website. 
+                    For this application, I used the <a href="https://spotthestation.nasa.gov/trajectory_data.cfm">Orbital Ephemeris Message (OEM) data</a> that contains ISS state vectors over an approximately 15 day period. 
+                    The data contains header, metadata, a listing of upcoming ISS translation maneuvers, and state vectors containing positional and velocity data for each epoch.
+                    <br>
+                    It is challenging to sift through the data manually to find specific information, as it is released in the form of XML and TXT files. 
+                    Hence, I created Surf Wax ISS, a containerized Flask application for querying and returning interesting information from the ISS data set. 
+                    The output data has been reformatted to make it easier for the user to understand. 
+                    I have also made the app more portable by containerizing it using Docker, and utilized Docker Compose to automate deployment. 
+                    The application has 13 routes that conform to the RESTful architecture. Some of the usage includes returning epochs data, ISS speed calculation, current location of the ISS, and many more.
+                    <br>
                     The latest update contains Dockerfile for increased protability, and includes Docker Compose to automate deployment.
-                    I am currently working on adding NoSQL database integration using Redis and container ochestration system using Kubernetes.
                   </p>
 
                 </div>
