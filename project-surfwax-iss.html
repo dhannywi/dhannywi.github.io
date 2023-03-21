@@ -102,22 +102,6 @@
                 <h3 class="h3">REST API</h3>
                 <p class="mb-4"><span class="text-muted">Back-End</span></p>
 
-                <div class="mb-5">
-                  <p>NASA collects positional and velocity data for the ISS, and made it publicly available through their website. 
-                    For this application, I used the <a href="https://spotthestation.nasa.gov/trajectory_data.cfm">Orbital Ephemeris Message (OEM) data</a> that contains ISS state vectors over an approximately 15 day period. 
-                    The data contains header, metadata, a listing of upcoming ISS translation maneuvers, and state vectors containing positional and velocity data for each epoch.
-                    <br>
-                    It is challenging to sift through the data manually to find specific information, as it is released in the form of XML and TXT files. 
-                    Hence, I created Surf Wax ISS, a containerized Flask application for querying and returning interesting information from the ISS data set. 
-                    The output data has been reformatted to make it easier for the user to understand. 
-                    I have also made the app more portable by containerizing it using Docker, and utilized Docker Compose to automate deployment. 
-                    The application has 13 routes that conform to the RESTful architecture. Some of the usage includes returning epochs data, ISS speed calculation, current location of the ISS, and many more.
-                    <br>
-                    The latest update contains Dockerfile for increased protability, and includes Docker Compose to automate deployment.
-                  </p>
-
-                </div>
-
                 <h4 class="h4 mb-3">What I did</h4>
                 <ul class="list-unstyled list-line mb-5">
                   <li>RESTful architecture</li>
@@ -126,19 +110,25 @@
                   <li>Docker</li>
                   <li>Docker Compose</li>
                 </ul>
-
-                <div class="col-md-7 mb-5 mb-md-0" data-aos="fade-up">
-                  <p><img src="assets/img/dhanny-photo.JPG" alt="Dhanny Indrakusuma" class="img-fluid"></p>
-                  <p>I am currently pursuing a Master of Science in Information Science, focusing on Machine Learning. My expected graduation date is December 2023.</p>
-                  <p>Transitioning from design into software engineering was a challenging, yet rewarding process. As a lifelong learner, I enjoy problem-solving, and seek opportunities where I can contribute and grow my skills.</p>
-                  <p>In my downtime, I enjoy hiking, kayaking, practicing yoga, and rock climbing.</p>
-                  <p><b>My coursework includes:</b> Software Engineering and Design, Computer Vision, Human-AI Interaction, Predictive Analytics and Data Mining, Artificial Intelligence in Health, Data Wrangling, Introduction to Machine Learning, Introduction to Scientific Programming, and Data Storytelling.</p>
-                  <p>Fun fact: I worked as a Fashion Designer and Product Developer before I fell in love with coding &#128522;</p>
-                  <p><a href="https://utexas-my.sharepoint.com/:b:/g/personal/dhannywi_austin_utexas_edu/ETcHnt1hTwRArQH863vVFcMBcAY6UN7cS2_VaSDp6mWq1g?e=1b7O6k" class="readmore">View my resume</a></p>
-                </div>
-                
+              
                 <p><a href="https://github.com/dhannywi/surfwax_iss" class="readmore">View Code & Documentation <i class="bi bi-github"></i></a></p>
               </div>
+
+              <div class="mb-5">
+                <p>NASA collects positional and velocity data for the ISS, and made it publicly available through their website. 
+                  For this application, I used the <a href="https://spotthestation.nasa.gov/trajectory_data.cfm">Orbital Ephemeris Message (OEM) data</a> that contains ISS state vectors over an approximately 15 day period. 
+                  The data contains header, metadata, a listing of upcoming ISS translation maneuvers, and state vectors containing positional and velocity data for each epoch.
+                  <br>
+                  It is challenging to sift through the data manually to find specific information, as it is released in the form of XML and TXT files. 
+                  Hence, I created Surf Wax ISS, a containerized Flask application for querying and returning interesting information from the ISS data set. 
+                  The output data has been reformatted to make it easier for the user to understand. 
+                  I have also made the app more portable by containerizing it using Docker, and utilized Docker Compose to automate deployment. 
+                  The application has 13 routes that conform to the RESTful architecture. Some of the usage includes returning epochs data, ISS speed calculation, current location of the ISS, and many more.
+                  <br>
+                  The latest update contains Dockerfile for increased protability, and includes Docker Compose to automate deployment.
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
