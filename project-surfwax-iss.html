@@ -102,7 +102,7 @@
                 <h3 class="h3">REST API</h3>
                 <p class="mb-4"><span class="text-muted">Back-End</span></p>
 
-                <h4 class="h4 mb-3">Tools Used</h4>
+                <h4 class="h4 mb-3">Tools used</h4>
                 <ul class="list-unstyled list-line mb-5">
                   <li>RESTful architecture</li>
                   <li>Python 3</li>
@@ -123,62 +123,19 @@
                 The data contains header, metadata, a listing of upcoming ISS translation maneuvers, and state vectors containing positional and velocity data for each epoch.
               </p>
               <p>
-                It is challenging to sift through the data manually to find specific information, as it is released in the form of XML and TXT files. 
-                Hence, I created Surf Wax ISS, a containerized Flask application for querying and returning interesting information from the ISS data set. 
+                Since the data is released in the form  of XML and TXT files, it is challenging to sift through it manually.
+                Hence, I created Surf Wax ISS, a containerized Flask application for querying and returning information from the ISS data set. 
                 The output data has been reformatted to make it easier for the user to understand. 
               </p>
-              <p>
-                I have also made the app more portable by containerizing it using Docker, and utilized Docker Compose to automate deployment. 
+              <p> 
                 The application has 13 routes that conform to the RESTful architecture. Some of the usage includes returning epochs data, ISS speed calculation, current location of the ISS, and many more.
-              </p>
-              <p>
-                The latest version contains Dockerfile for increased portability, and includes Docker Compose to automate deployment.
+                I have also made the app more portable by containerizing it using Docker, and utilized Docker Compose to automate deployment.
               </p>
             </div>
 
           </div>
         </div>
     </section>
-
-    <!-- ======= Testimonials Section ======= 
-    <section class="section pt-0">
-      <div class="container">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial">
-                  <img src="assets/img/person_1.jpg" alt="Image" class="img-fluid">
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-                      explicabo inventore.</p>
-                  </blockquote>
-                  <p>&mdash; Jean Hicks</p>
-                </div>
-              </div>
-            </div> -- End testimonial item --
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial">
-                  <img src="assets/img/person_2.jpg" alt="Image" class="img-fluid">
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-                      explicabo inventore.</p>
-                  </blockquote>
-                  <p>&mdash; Chris Stanworth</p>
-                </div>
-              </div>
-            </div> -- End testimonial item --
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section> End Testimonials Section -->
 
   </main><!-- End #main -->
 
