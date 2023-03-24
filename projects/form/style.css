@@ -82,13 +82,11 @@ body {
   
   #description {
     text-align: center;
-    position: relative;
     font-style: italic;
     font-size: 1rem;
-    width: 75vw;
+    max-width: 750px;
+    min-width: 225px;
     padding: 0vw 5vw 0vw 5vw;
-    max-width: 1000px;
-    min-width: 300px;
   }
   
   #submit:hover {
