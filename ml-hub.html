@@ -85,8 +85,8 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-6" data-aos="fade-up">
-            <h2>Machine Learning Hub for Tapis</h2>
-            <p>A containarized Flask application for querying and returning interesting information from the ISS trajectory data.</p>
+            <h2>Machine Learning Hub</h2>
+            <p>A dynamic platform for the Tapis Framework, designed to streamline the machine learning workflow for researchers utilizing TACC's high-performance computing systems, exemplifying our commitment to enhancing their experience.</p>
           </div>
         </div>
       </div>
@@ -112,33 +112,44 @@
                   <li>Docker Compose</li>
                   <li>Kubernetes</li>
                   <li>Git</li>
+                  <li>Hugging Face Hub API</li>
+                  <li>Tapis Authenticator API</li>
                 </ul>
 
-                <h4 class="h4 mb-3">Third-party API</h4>
-                <ul class="list-unstyled list-line mb-5">
-                  <li>Hugging Face Hub</li>
-                  <li>Tapis Authenticator</li>
-                </ul>
-                <p><a href="https://www.figma.com/proto/gDrmtckTMN2reKpzi8ii1O/ML-Hub-UI?type=design&t=lWeAVn1rGdRjhw4X-1&scaling=contain&page-id=0%3A1&starting-point-node-id=9%3A78&node-id=9-78&mode=design" target="_blank" class="readmore">UI Live Demo <i class="bi bi-github"></i></a></p>
-                <p><a href="https://youtu.be/4HfvgTUoGnI" target="_blank" class="readmore">View API Demo <i class="bi bi-github"></i></a></p>
-                <p><a href="https://github.com/tapis-project/ml-hub" target="_blank" class="readmore">View Code & Documentation <i class="bi bi-github"></i></a></p>
+                <p><a href="https://www.figma.com/proto/gDrmtckTMN2reKpzi8ii1O/ML-Hub-UI?type=design&t=lWeAVn1rGdRjhw4X-1&scaling=contain&page-id=0%3A1&starting-point-node-id=9%3A78&node-id=9-78&mode=design" target="_blank" class="readmore">UI Live Demo <i class="bi bi-figma"></i></a></p>
+                <p><a href="https://youtu.be/4HfvgTUoGnI" target="_blank" class="readmore">API Demo <i class="bi bi-youtube"></i></a></p>
+                <!-- <p><a href="https://github.com/tapis-project/ml-hub" target="_blank" class="readmore">View Code & Documentation <i class="bi bi-github"></i></a></p> -->
               </div>
             </div>
 
             <div class="col-md-7 mb-5 mb-md-0" data-aos="fade-up">
               <p><br>
-                NASA collects positional and velocity data for the ISS, and made it publicly available through their website. 
-                For this application, I used the <a href="https://spotthestation.nasa.gov/trajectory_data.cfm" target="_blank">Orbital Ephemeris Message (OEM) data</a> that contains ISS state vectors over an approximately 15 day period. 
-                The data contains header, metadata, a listing of upcoming ISS translation maneuvers, and state vectors containing positional and velocity data for each epoch.
+                Machine learning plays a pivotal role in research by enabling the extraction of meaningful insights from vast and complex datasets, accelerating data analysis and pattern recognition. 
+                Its ability to uncover hidden relationships and trends empowers cross-disciplinary decision-making, predictive modeling, and new discoveries. Nonetheless, users lacking technical proficiency may grapple with the complexities inherent in machine learning models, leading to challenges in both implementation and interpretation. 
+                This underscores the need for user-friendly interfaces and tools that can effectively bridge this gap.
               </p>
               <p>
-                Since the data is released in the form  of XML and TXT files, it is challenging to sift through it manually.
-                Hence, I created Surf Wax ISS, a containerized Flask application for querying and returning information from the ISS data set. 
-                The output data has been reformatted to make it easier for the user to understand. 
+                Within the Cloud and Interactive Computing group (CIC) at the Texas Advanced Computing Center (TACC), we are actively developing a Machine Learning Hub Portal (ML Hub), that integrates seamlessly into the Tapis Framework. 
+                Designed as a user-friendly platform, the ML Hub seeks to amplify the experiences of developers, scientists, and researchers engaged in machine learning research. 
+                Currently, Hugging Face offers a valuable resource by providing open-source pre-trained machine learning models and libraries, enabling developers to leverage powerful AI capabilities without building models from scratch. 
+                Through the integration of Hugging Face's API into our application, we aim to harness their state-of-the-art models to enhance ML Hub’s offerings and functionality. 
               </p>
               <p> 
-                The application has 13 routes that conform to the RESTful architecture. Some of the usage includes returning epochs data, ISS speed calculation, current location of the ISS, and many more.
-                I have also made the app more portable by containerizing it using Docker, and utilized Docker Compose to automate deployment.
+                Presently, our team has developed the Models Overview and Models Download features within ML Hub, offering non- technical users a unified avenue for accessing and viewing information on available machine learning models. 
+                In the upcoming months, our focus encompasses the implementation of the Inference Client and Training Engine, alongside the seamless integration of ML Hub's functionalities into the Tapis user interface.
+              </p>
+              <p>
+                Core features of ML Hub:
+                <ol type="1">
+                  <li>Models Overview: The models page on the portal displays an immediate snapshot of the most downloaded Hugging Face models and allows users to filter models by author. Furthermore, users can access detailed specifics regarding a model.</li>
+                  <li>Models Download: Through the portal, users can download a specific model to their Tapis environment or local machine. This process offers flexibility through options to either obtain a binary model file or a zip file containing the model's repository, and caches it in a version-aware way. The application fetches the latest version of the model by default.</li>
+                  <li>Inference Client: The inference client enables users to spin up or spin down a server on TACC’s HPC systems for machine learning model inference, and display model results and metadata to user. This service is a fast way to get started, test different models, and prototype AI products.</li>
+                  <li>Training Engine: The ML Hub Portal provides users with the ability to fine-tune machine learning models with their dataset and send jobs to TACC’s HPC systems. Users can quickly showcase their fine-tuned models without concerning themselves with the complexities of the underlying technologies.</li>
+                </ol>
+              </p>
+              <p>
+                In conclusion, the ML Hub Portal aims to democratize the power of machine learning by providing user-friendly access to Hugging Face's cutting-edge models and addressing the challenges faced by non-technical users. 
+                This portal not only enhances their engagement but also unlocks new horizons for collaboration and innovation, ultimately shaping a more inclusive and impactful future in machine learning research.
               </p>
             </div>
 
