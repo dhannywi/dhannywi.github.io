@@ -9,16 +9,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
 @font-face {
   font-family: VP-Pixel;
   src: url(../font/VPPixel-Simplified.otf);
-}
-
-@font-face {
-  font-family: zx-spectrum;
-  src: url(../font/zx-spectrum.ttf);
 }
 
 body {
