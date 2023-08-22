@@ -190,7 +190,7 @@ h6,
   font-size: 12px;
   text-transform: uppercase;
   color: #000;
-  transition: 0.2s all ease;
+  transition: 1s all ease;
   font-weight: 700;
 }
 
@@ -204,6 +204,7 @@ h6,
   color: #fff;
   text-decoration: none;
   background: #000;
+  animation: slide-br 1s ease-in-out;
 }
 
 .testimonials-slider .swiper-pagination {
@@ -336,7 +337,7 @@ h6,
 --------------------------------------------------------------*/
 /* Custom Navmenu */
 .custom-navmenu {
-  background: #001400;
+  background: #E5E5E5;/* #001400 */
 }
 
 .custom-navmenu .custom-menu,
@@ -352,12 +353,14 @@ h6,
 }
 
 .custom-navmenu .custom-menu li a {
-  color: #fff;
+  color: #0d1e2d;
   padding: 10px 0 !important;
+  transition: 0.3s all ease;
 }
 
 .custom-navmenu .custom-menu li a:hover {
   text-decoration: none;
+  color: #fff;
 }
 
 .custom-navmenu .custom-menu li.active a {
@@ -366,15 +369,16 @@ h6,
 
 .custom-navmenu h3 {
   font-size: 20px;
-  color: #fff;
+  color: #0d1e2d;
 }
 
 .custom-navmenu p {
-  color: rgba(255, 255, 255, 0.6);
+  color: #696969;
 }
 
 .custom-navmenu a {
-  color: rgba(255, 255, 255, 0.7);
+  color: #696969;
+  transition: 0.3s all ease;
 }
 
 .custom-navmenu a:hover {
@@ -469,6 +473,39 @@ h6,
 }
 
 /*--------------------------------------------------------------
+# Homepage body
+--------------------------------------------------------------*/
+.center-text {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.home-img {
+  opacity: 0.25;
+}
+
+.home-title {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.home-body {
+  font-size: 18px;
+  padding-bottom: 175px;
+}
+
+.home-link {
+  font-size: 12px;
+}
+
+.home-link:hover {
+  animation: arrow-slide 1s ease-in-out infinite;
+  margin-left: 9px;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
@@ -500,4 +537,59 @@ h6,
 
 .social a:hover {
   color: #000;
+  animation: arrow-slide 1s ease-in-out infinite;
+}
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.arrow-r {
+  animation: arrow-slide 1s ease-in-out infinite;
+  margin-left: 9px;
+}
+
+@keyframes arrow-slide {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
+.arrow-br {
+  animation: slide-br 1s ease-in-out infinite;
+}
+
+@keyframes slide-br {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(5px, 5px);
+  }
 }
