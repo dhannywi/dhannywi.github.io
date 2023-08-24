@@ -181,10 +181,6 @@ h6,
   color: #0d1e2d;
 }
 
-.h2:hover {
-  color: #777;
-}
-
 .h3 {
   font-size: 20px;
 }
@@ -376,6 +372,7 @@ h6,
 .custom-navmenu .custom-menu li a:hover {
   text-decoration: none;
   color: #fff;
+  animation: arrow-slide 1s ease-in-out;
 }
 
 .custom-navmenu .custom-menu li.active a {
@@ -398,6 +395,7 @@ h6,
 
 .custom-navmenu a:hover {
   color: #fff;
+  animation: arrow-slide 1s ease-in-out;
 }
 
 /* Custom Navbar */
@@ -415,6 +413,7 @@ h6,
 
 .custom-navbar .navbar-brand {
   font-size: 1.7rem;
+  color: #0d1e2d;
 }
 
 /* Burger */
@@ -552,8 +551,8 @@ h6,
 }
 
 .social a:hover {
-  color: #000;
-  animation: arrow-slide 1s ease-in-out infinite;
+  color: #696969;
+  animation: arrow-slide 1s ease-in-out;
 }
 
 /*--------------------------------------------------------------
