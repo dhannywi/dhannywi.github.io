@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Nanum+Myeongjo:wght@400;800&display=swap');
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,8 +37,8 @@ header img {
 }
 
 .brand {
-  font-family: 'Ms Madi', cursive;
-  font-size: 3rem;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 1.8rem;
   color: #fff;
   margin-left: 10px;
   margin-right: 450px;
@@ -129,8 +131,8 @@ input {
 }
 
 .tagline {
-  font-family: 'Ms Madi', cursive;
-  font-size: 5.5rem;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 3.3rem;
   color: #769353;
   padding: 20px 0;
   text-align: center;
@@ -172,8 +174,8 @@ input {
 }
 
 #variety {
-  font-family: 'Ms Madi', cursive;
-  font-size: 3rem;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2.1rem;
   color: #769353;
   padding: 15px;
 }
