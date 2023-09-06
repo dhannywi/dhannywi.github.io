@@ -28,7 +28,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 55px;
-  padding: 0px 20px;
+  padding: 0px;
 }
 
 header img {
@@ -40,8 +40,8 @@ header img {
   font-family: 'Homemade Apple', cursive;
   font-size: 1.8rem;
   color: #fff;
-  margin-left: 10px;
-  margin-right: 450px;
+  padding-left: 10px;
+  padding-right: 450px;
 
 }
 
