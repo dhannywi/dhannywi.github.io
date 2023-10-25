@@ -488,30 +488,46 @@ h6,
 /*--------------------------------------------------------------
 # Homepage body
 --------------------------------------------------------------*/
-.center-text {
+
+.home-img {
+  opacity: 0.25;
+}
+
+div.center-text {
   position: absolute;
   top: 40%;
   width: 100%;
   text-align: center;
 }
 
-.home-img {
-  opacity: 0.25;
+@media screen and (max-width: 1024px) {
+  .home-title {
+    font-size: 2.5vw;
+    letter-spacing: 0.25vw;
+    padding-bottom: .75vw;
+  }
+  .home-body {
+    font-size: 1vw;
+    padding-bottom: 10vw;
+  }
+  .home-link {
+    font-size: .75vw;
+  }
 }
 
-.home-title {
-  font-size: 40px;
-  letter-spacing: 3px;
-  padding-bottom: 10px;
-}
-
-.home-body {
-  font-size: 18px;
-  padding-bottom: 175px;
-}
-
-.home-link {
-  font-size: 13px;
+@media screen and (min-width: 1025px) {
+  .home-title {
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+  }
+  .home-body {
+    font-size: 18px;
+    padding-bottom: 175px;
+  }
+  .home-link {
+    font-size: 13px;
+  }
 }
 
 .home-link:hover {
