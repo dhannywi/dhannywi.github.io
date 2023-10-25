@@ -56,18 +56,18 @@
                 <h3 class="h3">Web Application</h3>
                 <p class="mb-4"><span class="text-muted">Full-Stack</span></p>
 
-                <h4 class="h4 mb-3">Technologies used</h4>
+                <h4 class="h4 mb-3">Technologies used:</h4>
                 <ul class="list-unstyled list-line mb-5 h4">
                   <li>Flask</li>
+                  <li>FastAPI</li>
                   <li>Typescript</li>
                   <li>React</li>
-                  <li>HTML5/CSS3</li>
-                  <li>Redis</li>
-                  <li>Docker & Docker Compose</li>
+                  <li>Docker</li>
                   <li>Kubernetes</li>
                   <li>Figma</li>
                   <li>Hugging Face Hub API</li>
-                  <li>Tapis Authenticator API</li>
+                  <li>Langchain API</li>
+                  <li>Tapis API</li>
                 </ul>
 
                 <p><a href="https://www.figma.com/proto/gDrmtckTMN2reKpzi8ii1O/ML-Hub-UI?type=design&node-id=9-78&t=Ku0RHLeQRZiRxj6C-1&scaling=contain&page-id=0%3A1&starting-point-node-id=9%3A78&mode=design" target="_blank" class="readmore">UI Live Demo <i class="bi bi-caret-right-fill"></i></a></p>
@@ -101,7 +101,7 @@
                 Core features of ML Hub:
                 <ol type="1">
                   <li><b>Models Overview:</b> The models page on the portal displays an immediate snapshot of the most downloaded Hugging Face models and allows users to filter models by author. Furthermore, users can access detailed specifics regarding a model.</li>
-                  <li><b>Models Download:</b> Through the portal, users can download a specific model to their Tapis environment or local machine. This process offers flexibility through options to either obtain a binary model file or a zip file containing the model's repository, and caches it in a version-aware way. The application fetches the latest version of the model by default.</li>
+                  <li><b>Models Download:</b> Through the portal, users can download a specific model. The application fetches the latest version of the model in a version-aware manner, and generates download links for the model.</li>
                   <li><b>Inference Client:</b> The inference client enables users to spin up or spin down a server on TACC’s HPC systems for machine learning model inference, and display model results and metadata to user. This service is a fast way to get started, test different models, and prototype AI products.</li>
                   <li><b>Training Engine:</b> The ML Hub Portal provides users with the ability to fine-tune machine learning models with their dataset and send jobs to TACC’s HPC systems. Users can quickly showcase their fine-tuned models without concerning themselves with the complexities of the underlying technologies.</li>
                 </ol>
@@ -116,7 +116,7 @@
             <div class="col-md-7 mb-5 mb-md-0" data-aos="fade-up">
               <p>
                 <b>An illustration of the Machine Learning Hub architecture:</b><br>
-                <img src="assets/img/ML-Hub-Architecture.png" alt="Machine Learning Hub Architecture" class="img-fluid">
+                <img src="assets/img/MLHub-Architecture.png" alt="Machine Learning Hub Architecture" class="img-fluid">
               </p>
             </div>
 
